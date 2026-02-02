@@ -1,0 +1,75 @@
+Introduction
+“Not just a library”
+
+This means React Testing Library (RTL) is not only a set of functions like render, screen, fireEvent, etc.
+
+It also comes with strong ideas about how you should write tests.
+
+So it doesn’t just give you tools — it tells you how to think about testing.
+
+“But a philosophy”
+
+The philosophy of React Testing Library is:
+
+Test your app the way users use it, not the way it’s implemented.
+
+In practice, that means:
+
+✅ Test what the user sees and does
+
+❌ Don’t test internal details (state, props, component methods)
+
+Example:
+
+✅ “Can the user see this text?”
+
+✅ “Can the user click this button and get a result?”
+
+❌ “Is this state variable set to true?”
+
+❌ “Was this internal function called?”
+
+“(Opinionated)”
+
+Opinionated means:
+
+The library intentionally pushes you toward certain patterns and away from others.
+
+RTL discourages:
+
+getByClassName
+
+Accessing component instances
+
+Testing implementation details
+
+RTL encourages:
+
+getByRole
+
+getByLabelText
+
+getByText
+
+Why?
+Because real users don’t care about class names or state — they care about buttons, labels, and text.
+
+Simple real-life analogy 🧠
+
+Think of RTL like a driving instructor:
+
+❌ Not: “Turn the engine shaft by 30 degrees”
+
+✅ But: “Press the accelerator and steer”
+
+You don’t care how the car works internally — you care that it drives correctly.
+
+One-sentence summary (important 💡)
+
+When they say:
+
+“Not just a library but a philosophy (opinionated)”
+
+They mean:
+
+React Testing Library doesn’t just give you testing tools — it enforces a mindset: write tests that reflect real user behavior, even if that limits how you test.
